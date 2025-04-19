@@ -21,7 +21,7 @@ Click on the light/dark mode button and it toggles light mode if the page is in 
 NOTES TO STAFF
 (If there is anything you need to tell us, please use the section below)
 ---------------
-
+I have deployed my website onto Github pages, and you can view my website on https://ethan-dao.github.io/personal-website/
 
 
 
