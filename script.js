@@ -19,7 +19,7 @@ themeToggleBtn.addEventListener("click", () => {
 });
 
 homeBtn.addEventListener("click", () => {
-  window.location.href = "/index.html"
+  window.location.href = "index.html"
 })
 
 // Contact me form
