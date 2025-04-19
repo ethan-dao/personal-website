@@ -1,0 +1,53 @@
+ALL students complete this section:
+
+CHOICES
+(You are allowed to choose a feature for some of the requirements. Indicate on the line
+ which one you chose using the letter provided in the spec. Separate the letters with a comma
+ In some cases you will also need to tell us what you did)
+-------
+9a. Used text-shadow to add shadows to texts in light mode (styling h1 header)
+9b. Used clamp() function to resize font across different viewpoints in style.css (used in styling the h1 header in the body)
+12. a, d (created a subtle background gradient and rounded borders for boxes in the About Me page)
+18. b (used ::before in contacts page for bottom text to put a stop emoji before the text)
+19. b (when the link is hovered over, it changes color from green to white in the About Me page)
+
+JAVASCRIPT
+(Please tells us what the JavaScript does e.g. "click on the green button and it does the following...")
+----------
+Click on the light/dark mode button and it toggles light mode if the page is in dark mode/default, and dark mode if the page is in light mode. Click on the home button and the button redirects you to the home page. Click submit in the Contact Me page and it brings you to the page to submit an email to me.
+
+
+
+NOTES TO STAFF
+(If there is anything you need to tell us, please use the section below)
+---------------
+
+
+
+
+ONLY modify this section if you implemented the requirements across 2 or more files.
+Otherwise, submit this file as is. PLEASE do not delete anything from this file.
+
+REQUIREMENT LOCATION
+(After the period, hit TAB and then enter the HTML page name where the requirement
+ was implemented)
+---------------------
+ 2.
+ 3.
+ 4.
+ 5.
+ 6.
+ 7.
+ 8.
+ 9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.

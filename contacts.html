@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethan Dao</title> <!-- Title of webpage in search bar -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="top-right-buttons">
+    <button id="theme-toggle">☀️</button>
+    <button id="home-button">🏠</button>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <img src="/images/profile.jpg" alt="Me" width="260" height="260">
+        <ul>
+          <li><a href="aboutme.html"><img src="/images/play-button-darkmode.png" alt="About Me" class="sidebar-icon"> About Me</a></li>
+          <li><a href="projects.html"><img src="/images/play-button-darkmode.png" alt="About Me" class="sidebar-icon"> Projects</a></li>
+          <li><a href="contacts.html"><img src="/images/play-button-darkmode.png" alt="About Me" class="sidebar-icon"> Contact Me</a></li>
+        </ul>
+        <div class="sidebar-footer">
+          <img src="/images/album-cover.jpeg" alt="Album Cover" width="150" height="150" />
+          <div class="sidebar-footer-text">
+            <b>Currently listening to:</b><br>Let It Happen<br>Tame Impala
+          </div>
+        </div>
+      </aside>
+
+  <main class="main-content">
+    <header class="inline-header">
+      <h1>Contact Me   <a href="https://www.linkedin.com/in/ethan-dao"><img src="/images/linkedin.png" alt="Linkedin" class="header-icon"></a><a href="https://www.github.com/ethan-dao"><img src="/images/github.png" alt="Github" class="header-icon"></a></h1>
+    <div class="contact-container">
+      <form class="contact-form">
+        <fieldset>
+          <legend>Get In Touch</legend>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+          <label for="subject">Subject:</label>
+          <input type="subject" id="subject" name="subject" required placeholder="Subject">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+          <input type="submit" value="Send message">
+        </fieldset>
+      </form>
+
+      <h2 class="decorative-footer">I don't currently have social media, but I respond best through text and email.</h2>
+
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
