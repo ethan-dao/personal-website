@@ -88,10 +88,21 @@ const songs = [
 ];
 
 function showRandomSong() {
-  const song = songs[Math.floor(Math.random() * songs.length)];
-  document.getElementById("album-art").src = song.image;
-  document.getElementById("song-title").textContent = song.title;
-  document.getElementById("song-artist").textContent = song.artist;
+
+  const savedSong = localStorage.getItem("currentSong");
+
+  if (savedSong) {
+    const song = JSON.parse(savedSong);
+    document.getElementById("album-art").src = song.image;
+    document.getElementById("song-title").textContent = song.title;
+    document.getElementById("song-artist").textContent = song.artist;
+  } else {
+    const song = songs[Math.floor(Math.random() * songs.length)];
+    localStorage.setItem("currentSong", JSON.stringify(song));
+    document.getElementById("album-art").src = song.image;
+    document.getElementById("song-title").textContent = song.title;
+    document.getElementById("song-artist").textContent = song.artist;
+  }
 }
 
 showRandomSong();
