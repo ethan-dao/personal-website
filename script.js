@@ -76,15 +76,15 @@ const songs = [
   }
 ];
 
-function showRandomsong() {
+function showRandomSong() {
   const song = songs[Math.floor(Math.random() * songs.length)];
   document.getElementById("album-art").src = song.image;
   document.getElementById("song-title").textContent = song.title;
   document.getElementById("song-artist").textContent = song.artist;
 }
 
-showRandomsong();
-setInterval(showRandomSong, 45000); 
+showRandomSong();
+setInterval(showRandomSong, 60000); 
 
 // Contact me form
 const contactForm = document.getElementById("contact-form");

@@ -33,7 +33,7 @@ body.light-theme #theme-toggle, body.light-theme #home-button {
 }
 
 body.light-theme {
-    --bg: #ffffff;
+    --bg: linear-gradient(to bottom right, #ffffff, #f0f4ff);
     --text: #10501e;
     --accent: var(--accent);
 }
