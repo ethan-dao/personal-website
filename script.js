@@ -22,6 +22,70 @@ homeBtn.addEventListener("click", () => {
   window.location.href = "index.html"
 })
 
+// Randomized songs
+const songs = [
+  {
+    title: "Everlong",
+    artist: "Foo Fighters",
+    image: "images/everlong.jpg"
+  },
+  {
+    title: "I Almost Do (Taylor's Version)",
+    artist: "Taylor Swift",
+    image: "images/red-tv.jpg"
+  },
+  {
+    title: "All I Need",
+    artist: "Radiohead",
+    image: "images/in-rainbows.jpg"
+  },
+  {
+    title: "Cute Thing",
+    artist: "Car Seat Headrest",
+    image: "images/twin-fantasy.jpg"
+  },
+  {
+    title: "Green Light",
+    artist: "Lorde",
+    image: "images/melodrama.jpg"
+  },
+  {
+    title: "Let It Happen",
+    artist: "Tame Impala",
+    image: "images/album-cover.jpeg"
+  },
+  {
+    title: "Cornelia Street",
+    artist: "Taylor Swift",
+    image: "images/lover.jpg"
+  },
+  {
+    title: "Thinkin Bout You",
+    artist: "Frank Ocean",
+    image: "images/channel-orange.jpg"
+  },
+  {
+    title: "You Were Right",
+    artist: "RÜFÜS DU SOL",
+    image: "images/bloom.jpg"
+  },
+  {
+    title: "So Sick",
+    artist: "Ne-Yo",
+    image: "images/so-sick.jpg"
+  }
+];
+
+function showRandomsong() {
+  const song = songs[Math.floor(Math.random() * songs.length)];
+  document.getElementById("album-art").src = song.image;
+  document.getElementById("song-title").textContent = song.title;
+  document.getElementById("song-artist").textContent = song.artist;
+}
+
+showRandomsong();
+setInterval(showRandomSong, 45000); 
+
 // Contact me form
 const contactForm = document.getElementById("contact-form");
 
