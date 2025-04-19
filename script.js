@@ -73,7 +73,18 @@ const songs = [
     title: "So Sick",
     artist: "Ne-Yo",
     image: "images/so-sick.jpg"
+  },
+  {
+    title: "House of Cards",
+    artist: "Radiohead",
+    image: "images/in-rainbows.jpg"
+  }, 
+  {
+    title: "I'm On Fire", 
+    artist: "Bruce Springsteen", 
+    image: "images/born-in-the-usa.jpg"
   }
+
 ];
 
 function showRandomSong() {
