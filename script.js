@@ -88,7 +88,14 @@ const songs = [
 ];
 
 function showRandomSong() {
+  const song = songs[Math.floor(Math.random() * songs.length)];
+  document.getElementById("album-art").src = song.image;
+  document.getElementById("song-title").textContent = song.title;
+  document.getElementById("song-artist").textContent = song.artist;
+  localStorage.setItem("currentSong", JSON.stringify(song));
+}
 
+function loadSavedSongOrRandom() {
   const savedSong = localStorage.getItem("currentSong");
 
   if (savedSong) {
@@ -97,15 +104,11 @@ function showRandomSong() {
     document.getElementById("song-title").textContent = song.title;
     document.getElementById("song-artist").textContent = song.artist;
   } else {
-    const song = songs[Math.floor(Math.random() * songs.length)];
-    localStorage.setItem("currentSong", JSON.stringify(song));
-    document.getElementById("album-art").src = song.image;
-    document.getElementById("song-title").textContent = song.title;
-    document.getElementById("song-artist").textContent = song.artist;
+    showRandomSong();
   }
 }
 
-showRandomSong();
+loadSavedSongOrRandom();
 setInterval(showRandomSong, 60000); 
 
 // Contact me form

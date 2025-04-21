@@ -28,7 +28,7 @@
 }
 
 body.light-theme #theme-toggle, body.light-theme #home-button {
-  background-color: linear-gradient(to bottom right, #ffffff, #f0f4ff);
+  background: linear-gradient(to bottom right, #ffffff, #f0f4ff);
   color: #ffffff;
 }
 
@@ -47,7 +47,7 @@ body.light-theme a {
   color: var(--text);
 }
   
-body.light-theme .main-content section a:hover {
+body.light-theme .main-content h2 a:hover {
   color: var(--accent);
 }
   
@@ -130,7 +130,7 @@ a {
   height: 24px;
 }
 
-.main-content section {
+.main-content h2 {
   font-size: 1.6rem;
   margin-top: -30px;
 }
@@ -160,11 +160,11 @@ a {
   transition: transform 0.2s ease-in-out;
 }
 
-.main-content section a {
+.main-content h2 a {
   color: var(--accent);
 }
 
-.main-content section a:hover {
+.main-content h2 a:hover {
   color: var(--text)
 }
 
@@ -202,7 +202,7 @@ a {
 
 .project-item {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin-bottom: 50px;
 }
 
@@ -227,7 +227,6 @@ a {
 }
 
 form {
-  background-color: var(--bg);
   color: var(--text);
   padding: 1.5rem;
   border-radius: 10px;
@@ -249,7 +248,7 @@ form label {
 }
 
 form input[type*="email"],
-form input[type*="subject"],
+form input[type*="text"],
 form textarea {
   width: 100%;
   max-width: 750px;
@@ -274,6 +273,7 @@ form input[type="submit"] {
   position: relative;
   font-size: 24px;
   padding-left: 30px;
+  padding-top: 30px;
 }
   
 .decorative-footer::before {
@@ -282,6 +282,7 @@ form input[type="submit"] {
   top: 0;
   left: 0;
   font-size: 1.5rem;
+  padding-top: 30px;
 }
 
 .inline-header {
@@ -354,7 +355,7 @@ form input[type="submit"] {
     font-size: 1.5rem;
   }
     
-  .main-content section {
+  .main-content h2 {
     font-size: 0.9rem;
     margin-top: 0.5rem;
   }
